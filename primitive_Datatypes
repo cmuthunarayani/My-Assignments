@@ -1,0 +1,17 @@
+
+let userName = "Muthu Narayani"
+let organization = "vThink"
+let contactNo = 9940861745
+let knowsAutomation = true
+let usePlaywright
+
+console.log ("Username")
+console.log (typeof userName)
+console.log ("Organization")
+console.log (typeof organization)
+console.log ("Contact Number:")
+console.log (typeof contactNo)
+console.log ("Knows Automation")
+console.log (typeof knowsAutomation)
+console.log ("Use Playwright")
+console.log  (typeof usePlaywright)
