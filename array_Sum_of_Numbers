@@ -1,0 +1,13 @@
+//Declare the numbers array and initialize it with some values
+let arr = [10, 12, 13, 24, 25]
+//Declare variable to calculate and store the sum value 
+//Assign sum value as 0 due to adding array values
+let sum =0;
+//Create for loop to add each array values 
+for(let i=1;i<arr.length-1;i++)
+{
+    sum=sum+arr[i];
+}
+//Printing the sum of the numbers in the array
+console.log("Sum of the numbers in the array is: "+sum)
+

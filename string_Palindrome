@@ -1,0 +1,26 @@
+//Assign the string variable
+let str = "Madame"
+//converting the string to lower case and trimming the spaces
+str = str.toLowerCase()
+str = str.trim()
+//converting the string to array
+str = str.split("")
+strLen = str.length - 1 //Find the last index of the array
+let result = false //Variable to store the result of the palindrome check
+//Comparing the two arrays to check if they are palindromes
+for(let i=0;i<str.length;i++)
+{
+for(let j=strLen;j>=0;j--)
+{
+if(str[i] === str[j])
+    result = true
+else
+    result = false
+}
+
+}
+//Printing the result of the palindrome check
+if(result == true)
+console.log("The string is a palindrome ")
+else
+    console.log("The string is not a palindrome ")

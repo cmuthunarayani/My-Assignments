@@ -1,0 +1,66 @@
+//Example 1
+//Assign the string variable
+let input ="This is my string Programme"
+//converting string to array
+input = input.split(" ");
+//Find the last index of the array
+let arrLen = input.length - 1;
+//Print the length of the last index
+console.log("The last word is "+ input[arrLen] + " with the length " + input[arrLen].length)
+
+//Example 2
+//Assing the string with spaces and trim the spaces
+let input1 ="  fly in   the sky   "
+input1 = input1.trim()
+input1 = input1.replace(/\s+/g, " ")
+
+//converting string to array
+input1 = input1.split(" ");
+//Find the last index of the array
+arrLen = input1.length - 1;
+
+//Print the length of the last index
+console.log("The last word is "+ input1[arrLen] + " with the length " + input1[arrLen].length)
+
+
+//Example 3
+//Two string variables to check if they are anagrams or not
+let str1 = "  Hello"
+let str2 = "World"
+//Converting the strings to lower case and trimming the spaces
+str1 = str1.toLowerCase()
+str2 = str2.toLowerCase()
+str1 = str1.trim()
+str2 = str2.trim()
+//Converting the strings to array and sorting them
+str1 =str1.split("")
+str2= str2.split("")
+//Sorting the arrays
+str1 = str1.sort()
+str2 = str2.sort()
+
+let result = false //Variable to store the result of the anagram check
+// Comparing the two arrays to check if they are anagrams
+for (let i=0;i<str1.length;i++)
+{
+    for(let j=0;j<str2.length;j++)
+    {
+        if(str1[i] === str2[j])
+        {
+            result = true
+        }
+
+        else
+            result = false
+    }
+}
+//Checking the length of the two strings to determine if they are anagrams
+if(str1.length != str2.length)
+    result = false
+else
+    result = true
+//Printing the result of the anagram check
+if(result==true)
+    console.log("The strings are anagrams")
+else
+    console.log("The strings are not anagrams")
